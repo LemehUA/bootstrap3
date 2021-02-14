@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/custom.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- menu -->
+
+                <nav class="navbar navbar-inverse ">
+                    <div class="container-fluid">
+
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img id="logo" alt="Brand" src="./img/logo.png"></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav">
+                                <li></li>
+                                <li class="active"><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                            </ul>
+
+                            <!-- popup -->
+
+                            <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                                data-target="#exampleModal1" data-whatever="@mdo">Contact us</button>
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModal1Label" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModal1Label">New message</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name"
+                                                        class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.navbar-collapse -->
+
+                </nav>
+
+                <!-- slider -->
+                <h1>Bootstrap 3</h1>
+
+                <div class="col-sm-12">
+                    <div class="bs-example">
+                        <div id="myCarousel" class="carousel slide">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="active item"><img src="./img/1.jpg" alt="slide1"></div>
+                                <div class="item"><img src="./img/2.jpg" alt="slide2"></div>
+                                <div class="item"><img src="./img/3.jpg" alt="slide3"></div>
+                                <div class="item"><img src="./img/4.jpg" alt="slide4"></div>
+                            </div>
+                            <!-- Carousel nav --> <a class="carousel-control left-flat" href="#myCarousel"
+                                data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right-flat" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion -->
+                <div class="col-sm-6">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        Collapsible Group 1</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Collapsible Group 2</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        Collapsible Group 3</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                        Collapsible Group 4</a>
+                                </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- tabs -->
+                <div class="col-sm-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                            <div class="pull-right">
+                                <!-- Tabs -->
+                                <ul class="nav panel-tabs">
+                                    <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
+                                    <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
+                                    <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
+                                    <li><a href="#tab4" data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab1">
+                                    <p>
+
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing
+                                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                        erat,
+                                        sed diam voluptua. At
+                                    </p>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Lorem ipsum dolor
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="tab2">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                        diam
+                                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                                        kasd
+                                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                                        dolor
+                                        sit
+                                    </p>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal2">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModal2Label" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModal2Label">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Lorem ipsum dolor
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab3">
+
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                        diam
+                                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                                        kasd
+                                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                    </p>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal3">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModal3Label" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModal3Label">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Lorem ipsum dolor
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab4">
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                        diam
+                                        voluptua. At vero eos et accusam.
+
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                        consequat,
+                                        vel illum dolore eu feugiat nulla facilisis
+                                    </p>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal4">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModal4Label" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModal4Label">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Lorem ipsum dolor
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- form -->
+                <div class="col-sm-12">
+                    <div class="my-form">
+                        <form class="form-inline" action="#">
+                            <div class="form-group">
+                                <label class="sr-only" for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="pwd">phone:</label>
+                                <input type="tel" class="form-control" id="pwd" placeholder="+38 096 111 11 11">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- cards -->
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="./img/card.jpg" alt="card">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Lorem ipsum dolor</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                    class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="./img/card.jpg" alt="card">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Lorem ipsum dolor</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                    class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="./img/card.jpg" alt="card">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Lorem ipsum dolor</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                    class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="./img/card.jpg" alt="card">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Lorem ipsum dolor</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
+                                    class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('#carousel').carousel({
+                interval: 5000,
+                keyboard: 'false',
+                pause: 'hover',
+                ride: 'false',
+                wrap: 'false'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

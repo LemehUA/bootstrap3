@@ -1,0 +1,127 @@
+#logo {
+    position: relative;
+    top: -11px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.btn {
+    margin-top: 7px;
+}
+
+.item {
+    color: #666;
+    /* background: #333; */
+    height: 400px;
+    line-height: 300px;
+    /* Align the text vertically center. */
+    font-size: 52px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-control {
+    top: 50%;
+    /* border 3px, size 40px */
+    border: 3px solid #fff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+/* cancel background image gradient */
+
+.carousel-control.left-flat {
+    right: auto;
+    left: 15px;
+}
+
+/* override background image gradient */
+
+.carousel-control.right-flat {
+    right: 15px;
+    left: auto;
+}
+
+/*Panel tabs*/
+
+.tab-content>.tab-pane {
+    max-height: 150px;
+}
+
+.panel-tabs {
+    position: relative;
+    bottom: 30px;
+    clear: both;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    overflow: auto;
+}
+
+.panel-tabs>li>a {
+    margin-right: 2px;
+    margin-top: 4px;
+    line-height: .85;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #ffffff;
+}
+
+.panel-tabs>li>a:hover {
+    border-color: transparent;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.panel-tabs>li.active>a, .panel-tabs>li.active>a:hover, .panel-tabs>li.active>a:focus {
+    color: #fff;
+    cursor: default;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, .23);
+    border-bottom-color: transparent;
+}
+
+/* form */
+
+.my-form {
+    margin: 30px 30px;
+    text-align: center;
+}
+
+.sr-only {
+    position: relative;
+    overflow: visible;
+    clip: auto;
+    width: 150px;
+}
